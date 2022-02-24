@@ -1,0 +1,31 @@
+Step 1 - 
+
+In 'index.py' line 8 to 12 set the variables according to your mysql connection 
+	ie. HOST = "localhost"   
+USER = "root"
+PASSWORD = "@@root123"   # Enter your password in quotes
+DATABASE = "weather"
+
+
+
+Step 2 - 
+In mysql workbench execute following commands: 
+
+
+# Initial setup
+create database weather;
+use weather;
+
+# Table creation
+create table weather_data (
+city varchar(30),
+conditions varchar(30),
+temperature float,
+humidity float,
+wind float,
+dtime datetime primary key);
+
+
+Step 3 - 
+
+Run index.py to see all's fine!
